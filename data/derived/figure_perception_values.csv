@@ -1,0 +1,21 @@
+key,label,source_path,mean,ci_lo,ci_hi,dz,n,holm_p_two_sided,printed_mean_ci,printed_holm,source
+mute,H vs E,samples.catch_pass.manipulation_check.participants,0.9460,0.6760,1.2030,1.108,39,,"+0.95 [0.68, 1.20]",,20260916_2230
+P1,H vs E,samples.catch_pass.hypotheses.P1.participants,0.1130,-0.0140,0.2300,0.286,39,0.1647,"+0.11 [−0.01, 0.23]",0.16,20260916_2230
+P2,H vs R (strong),samples.catch_pass.hypotheses.P2.participants,0.0760,-0.0620,0.2040,0.178,39,0.2729,"+0.08 [−0.06, 0.20]",0.27,20260916_2230
+P3,strong $-$ normal,samples.catch_pass.hypotheses.P3.participants,0.2090,0.0360,0.3890,0.374,39,0.07518,"+0.21 [0.04, 0.39]",0.075,20260916_2230
+
+group_row,group,source_path,mean,ci_lo,ci_hi,n_row,n_group,p_perm_exploratory,perm_B,symbol_level,source
+mute,cn,samples.catch_pass.by_listener_group.cn.MC,0.3590,-0.1410,0.8330,9,9,0.04819,5000,0,20260916_2230
+mute,en,samples.catch_pass.by_listener_group.en.MC,1.0690,0.7360,1.3820,24,24,0.04819,5000,0,20260916_2230
+mute,jp,samples.catch_pass.by_listener_group.jp.MC,1.3330,0.8330,1.8890,6,6,0.04819,5000,0,20260916_2230
+P1,cn,samples.catch_pass.by_listener_group.cn.P1-P3.P1,0.1020,-0.1710,0.3010,9,9,0.9344,5000,0,20260916_2230
+P1,en,samples.catch_pass.by_listener_group.en.P1-P3.P1,0.1300,-0.0230,0.2810,24,24,0.9344,5000,1,20260916_2230
+P1,jp,samples.catch_pass.by_listener_group.jp.P1-P3.P1,0.0620,-0.3330,0.3960,6,6,0.9344,5000,1,20260916_2230
+P2,cn,samples.catch_pass.by_listener_group.cn.P1-P3.P2,0.0520,-0.1850,0.2710,9,9,0.7239,5000,0,20260916_2230
+P2,en,samples.catch_pass.by_listener_group.en.P1-P3.P2,0.1150,-0.0590,0.2710,24,24,0.7239,5000,0,20260916_2230
+P2,jp,samples.catch_pass.by_listener_group.jp.P1-P3.P2,-0.0420,-0.4310,0.3750,6,6,0.7239,5000,0,20260916_2230
+P3,cn,samples.catch_pass.by_listener_group.cn.P1-P3.P3,0.4070,-0.0370,0.8610,9,9,0.4723,5000,0,20260916_2230
+P3,en,samples.catch_pass.by_listener_group.en.P1-P3.P3,0.1420,-0.0170,0.3230,24,24,0.4723,5000,0,20260916_2230
+P3,jp,samples.catch_pass.by_listener_group.jp.P1-P3.P3,0.1810,-0.4030,0.6810,6,6,0.4723,5000,1,20260916_2230
+
+panel (a) cell,rav16_hap_s,peak frame,114,fps,60.0,source,${PROJECT_ROOT}/paper/figures/fig3_src/peak_rav16_hap_s.npz

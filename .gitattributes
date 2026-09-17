@@ -1,0 +1,5 @@
+# Store and check out every file byte for byte.
+# The release ships SHA-256 hashes of its own files, and the pre-registration freeze
+# is a hash of seven of them, so any end-of-line conversion on clone would break the
+# check that the freeze exists to make.
+* -text

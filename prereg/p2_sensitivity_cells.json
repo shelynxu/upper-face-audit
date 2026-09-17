@@ -1,0 +1,233 @@
+{
+ "rule": "pre-registered P2 sensitivity subset (ANALYSIS_PLAN_V6.md section 8, written 2026-09-14 15:3x before any participant): an R cell is a clean motion-equated timing control when the shown R/H amplitude ratio (p95-p5 in the speech span) lies in [0.80, 1.25] on BOTH brow channels AND r(shown H, shown R) < 0.30 on BOTH channels; read from build/verify_arrays_v6.csv (stimuli lane, 14:39)",
+ "source": "build/verify_arrays_v6.csv",
+ "cells": {
+  "rav02_ang_n": {
+   "level": "normal",
+   "R_over_H_inner": 0.998,
+   "R_over_H_outer": 1.011,
+   "r_HR_inner": 0.834,
+   "r_HR_outer": 0.078,
+   "clean": false
+  },
+  "rav02_ang_s": {
+   "level": "strong",
+   "R_over_H_inner": 1.043,
+   "R_over_H_outer": 1.013,
+   "r_HR_inner": -0.301,
+   "r_HR_outer": -0.283,
+   "clean": true
+  },
+  "rav02_dis_n": {
+   "level": "normal",
+   "R_over_H_inner": 0.937,
+   "R_over_H_outer": 1.026,
+   "r_HR_inner": 0.237,
+   "r_HR_outer": -0.095,
+   "clean": true
+  },
+  "rav02_dis_s": {
+   "level": "strong",
+   "R_over_H_inner": 1.003,
+   "R_over_H_outer": 0.983,
+   "r_HR_inner": 0.72,
+   "r_HR_outer": 0.631,
+   "clean": false
+  },
+  "rav04_hap_n": {
+   "level": "normal",
+   "R_over_H_inner": 1.045,
+   "R_over_H_outer": 1.058,
+   "r_HR_inner": -0.818,
+   "r_HR_outer": -0.695,
+   "clean": true
+  },
+  "rav04_hap_s": {
+   "level": "strong",
+   "R_over_H_inner": 0.956,
+   "R_over_H_outer": 1.0,
+   "r_HR_inner": 0.359,
+   "r_HR_outer": -0.059,
+   "clean": false
+  },
+  "rav06_ang_n": {
+   "level": "normal",
+   "R_over_H_inner": 1.008,
+   "R_over_H_outer": 0.687,
+   "r_HR_inner": -0.04,
+   "r_HR_outer": 0.305,
+   "clean": false
+  },
+  "rav06_ang_s": {
+   "level": "strong",
+   "R_over_H_inner": 1.018,
+   "R_over_H_outer": 0.927,
+   "r_HR_inner": -0.168,
+   "r_HR_outer": -0.513,
+   "clean": true
+  },
+  "rav08_ang_n": {
+   "level": "normal",
+   "R_over_H_inner": 1.0,
+   "R_over_H_outer": 1.046,
+   "r_HR_inner": 0.883,
+   "r_HR_outer": -0.296,
+   "clean": false
+  },
+  "rav08_ang_s": {
+   "level": "strong",
+   "R_over_H_inner": 0.956,
+   "R_over_H_outer": 0.955,
+   "r_HR_inner": -0.442,
+   "r_HR_outer": -0.422,
+   "clean": true
+  },
+  "rav10_fea_n": {
+   "level": "normal",
+   "R_over_H_inner": 0.845,
+   "R_over_H_outer": 1.011,
+   "r_HR_inner": -0.762,
+   "r_HR_outer": -0.155,
+   "clean": true
+  },
+  "rav10_fea_s": {
+   "level": "strong",
+   "R_over_H_inner": 0.678,
+   "R_over_H_outer": 1.064,
+   "r_HR_inner": -0.499,
+   "r_HR_outer": -0.222,
+   "clean": false
+  },
+  "rav14_hap_n": {
+   "level": "normal",
+   "R_over_H_inner": 1.0,
+   "R_over_H_outer": 1.0,
+   "r_HR_inner": -0.626,
+   "r_HR_outer": 0.054,
+   "clean": true
+  },
+  "rav14_hap_s": {
+   "level": "strong",
+   "R_over_H_inner": 1.0,
+   "R_over_H_outer": 1.0,
+   "r_HR_inner": 0.39,
+   "r_HR_outer": 0.039,
+   "clean": false
+  },
+  "rav16_hap_n": {
+   "level": "normal",
+   "R_over_H_inner": 0.99,
+   "R_over_H_outer": 1.002,
+   "r_HR_inner": -0.104,
+   "r_HR_outer": -0.051,
+   "clean": true
+  },
+  "rav16_hap_s": {
+   "level": "strong",
+   "R_over_H_inner": 0.951,
+   "R_over_H_outer": 0.997,
+   "r_HR_inner": -0.843,
+   "r_HR_outer": -0.764,
+   "clean": true
+  },
+  "rav18_dis_n": {
+   "level": "normal",
+   "R_over_H_inner": 1.002,
+   "R_over_H_outer": 1.039,
+   "r_HR_inner": -0.543,
+   "r_HR_outer": -0.474,
+   "clean": true
+  },
+  "rav18_dis_s": {
+   "level": "strong",
+   "R_over_H_inner": 0.915,
+   "R_over_H_outer": 1.026,
+   "r_HR_inner": -0.361,
+   "r_HR_outer": -0.266,
+   "clean": true
+  },
+  "rav24_dis_n": {
+   "level": "normal",
+   "R_over_H_inner": 1.009,
+   "R_over_H_outer": 0.974,
+   "r_HR_inner": -0.423,
+   "r_HR_outer": -0.051,
+   "clean": true
+  },
+  "rav24_dis_s": {
+   "level": "strong",
+   "R_over_H_inner": 0.863,
+   "R_over_H_outer": 0.936,
+   "r_HR_inner": -0.183,
+   "r_HR_outer": -0.619,
+   "clean": true
+  },
+  "rav12_fea_r2_n": {
+   "level": "normal",
+   "R_over_H_inner": 1.074,
+   "R_over_H_outer": 1.016,
+   "r_HR_inner": -0.807,
+   "r_HR_outer": -0.42,
+   "clean": true
+  },
+  "rav12_fea_r2_s": {
+   "level": "strong",
+   "R_over_H_inner": 0.911,
+   "R_over_H_outer": 0.965,
+   "r_HR_inner": -0.545,
+   "r_HR_outer": -0.426,
+   "clean": true
+  },
+  "rav20_fea_r2_n": {
+   "level": "normal",
+   "R_over_H_inner": 1.012,
+   "R_over_H_outer": 0.711,
+   "r_HR_inner": -0.195,
+   "r_HR_outer": 0.444,
+   "clean": false
+  },
+  "rav20_fea_r2_s": {
+   "level": "strong",
+   "R_over_H_inner": 0.987,
+   "R_over_H_outer": 0.891,
+   "r_HR_inner": -0.779,
+   "r_HR_outer": -0.359,
+   "clean": true
+  }
+ },
+ "clean_strong": [
+  "rav02_ang_s",
+  "rav06_ang_s",
+  "rav08_ang_s",
+  "rav12_fea_r2_s",
+  "rav16_hap_s",
+  "rav18_dis_s",
+  "rav20_fea_r2_s",
+  "rav24_dis_s"
+ ],
+ "clean_normal": [
+  "rav02_dis_n",
+  "rav04_hap_n",
+  "rav10_fea_n",
+  "rav12_fea_r2_n",
+  "rav14_hap_n",
+  "rav16_hap_n",
+  "rav18_dis_n",
+  "rav24_dis_n"
+ ],
+ "not_clean": {
+  "rav02_ang_n": "r inner 0.83",
+  "rav02_dis_s": "r inner 0.72; r outer 0.63",
+  "rav04_hap_s": "r inner 0.36",
+  "rav06_ang_n": "R/H outer 0.69; r outer 0.31",
+  "rav08_ang_n": "r inner 0.88",
+  "rav10_fea_s": "R/H inner 0.68",
+  "rav14_hap_s": "r inner 0.39",
+  "rav20_fea_r2_n": "R/H outer 0.71; r outer 0.44"
+ },
+ "n": {
+  "strong_clean": 8,
+  "normal_clean": 8,
+  "total_R": 24
+ }
+}

@@ -1,0 +1,278 @@
+{
+ "files": [
+  {
+   "path": "code/ladder/build_ladder.py",
+   "bytes": 62820,
+   "why": "TD-PSOLA ladder builder (Praat); regenerates every manipulated wav from the corpora"
+  },
+  {
+   "path": "code/ladder/ladder_manifest.json",
+   "bytes": 1108113,
+   "why": "the realised rung table: every step, its target and what was achieved"
+  },
+  {
+   "path": "code/audit/score.py",
+   "bytes": 19290,
+   "why": "reads each model's own output arrays and scores brow ln amplitude ratios"
+  },
+  {
+   "path": "code/audit/analyse2.py",
+   "bytes": 42313,
+   "why": "the dose-response analysis"
+  },
+  {
+   "path": "code/audit/common2.py",
+   "bytes": 1929,
+   "why": "the item list every stage reads: each ladder wav with its cell, rung, family and realised dose"
+  },
+  {
+   "path": "code/audit/level_def.py",
+   "bytes": 5630,
+   "why": "the one definition of the level step"
+  },
+  {
+   "path": "code/audit/stage_acoustics.py",
+   "bytes": 4755,
+   "why": "the acoustic stage: 60-fps f0 and energy tracks plus the cue measures for every ladder wav"
+  },
+  {
+   "path": "code/audit/run_emoface.py",
+   "bytes": 2907,
+   "why": "inference wrapper (model not redistributed)"
+  },
+  {
+   "path": "code/audit/run_ext.py",
+   "bytes": 4736,
+   "why": "inference wrappers for the other models"
+  },
+  {
+   "path": "code/audit/AUDIT_NOTES.md",
+   "bytes": 30512,
+   "why": "what each number means"
+  },
+  {
+   "path": "code/human/g2_predict.py",
+   "bytes": 6621,
+   "why": "the same-actor human prediction; MediaPipe on human video, no avatar anywhere"
+  },
+  {
+   "path": "code/human/g2_coefficients.json",
+   "bytes": 219413,
+   "why": "the fitted regression behind it: the human ln amplitude ratio predicted for a realised acoustic delta"
+  },
+  {
+   "path": "code/human/clipdata.py",
+   "bytes": 17559,
+   "why": "per-clip face amplitudes in the scored windows, the per-actor event thresholds, and the follow-index control"
+  },
+  {
+   "path": "code/perception/analyse_perception.py",
+   "bytes": 143255,
+   "why": "THE FROZEN ANALYSER -- hashed before the first participant"
+  },
+  {
+   "path": "code/perception/robustness_specification_curve.py",
+   "bytes": 9297,
+   "why": "8 nested exclusion sets; reproduces the frozen analyser exactly as a self-check"
+  },
+  {
+   "path": "code/perception/engagement_audit.py",
+   "bytes": 9770,
+   "why": "score-blind per-participant engagement audit"
+  },
+  {
+   "path": "code/perception/mixed_model.py",
+   "bytes": 9531,
+   "why": "crossed participant x item LMM, min-F', and the normalisation variants"
+  },
+  {
+   "path": "code/perception/mixed_model_family.py",
+   "bytes": 4780,
+   "why": "the LMM stated as the pre-registered family"
+  },
+  {
+   "path": "code/figures/make_figures.py",
+   "bytes": 23867,
+   "why": "the protocol diagram and the dose figure; the dose figure is drawn from data/derived/figure_dose_values.csv"
+  },
+  {
+   "path": "code/figures/make_perception_figure.py",
+   "bytes": 35157,
+   "why": "the perception figure; redraws it from the released values and can recheck them against the per-screen scores"
+  },
+  {
+   "path": "prereg/ANALYSIS_PLAN.md",
+   "bytes": 47560,
+   "why": "the frozen plan: hypotheses, exclusions, stopping rule, sample size"
+  },
+  {
+   "path": "prereg/PLAN_FREEZE.sha256",
+   "bytes": 952,
+   "why": "the hash taken before the first participant -- this is what makes the claim checkable"
+  },
+  {
+   "path": "prereg/PLAN_FREEZE.frozen_at",
+   "bytes": 1211,
+   "why": "what the freeze recorded: the moment, the session manifest it covered, and the app deployed at the time"
+  },
+  {
+   "path": "prereg/DEVIATIONS.md",
+   "bytes": 13489,
+   "why": "every deviation and every interim look, as the plan requires"
+  },
+  {
+   "path": "data/derived/audit_results.csv",
+   "bytes": 4173674,
+   "why": "every audited measurement"
+  },
+  {
+   "path": "data/derived/dose_tables.csv",
+   "bytes": 281355,
+   "why": "slopes per model per cue"
+  },
+  {
+   "path": "data/derived/human_prediction_compare.csv",
+   "bytes": 22682,
+   "why": "model vs human prediction"
+  },
+  {
+   "path": "data/derived/null_floor.csv",
+   "bytes": 2409,
+   "why": "the null floor per model, channel and arm: the readout on the contrasts that carry no dose"
+  },
+  {
+   "path": "data/derived/follower_checks.csv",
+   "bytes": 27728,
+   "why": "constructed-follower controls"
+  },
+  {
+   "path": "data/derived/figure_dose_values.csv",
+   "bytes": 13517,
+   "why": "every value plotted in the dose figure, per model and follower and per voice; the figure script reads it"
+  },
+  {
+   "path": "data/derived/figure_perception_values.csv",
+   "bytes": 2208,
+   "why": "every value plotted in the perception figure"
+  },
+  {
+   "path": "data/perception/perception_responses.csv",
+   "bytes": 447967,
+   "why": "every recorded screen of the 42 analysed sessions, de-identified (CC BY-NC 4.0)"
+  },
+  {
+   "path": "data/perception/perception_scored.csv",
+   "bytes": 193788,
+   "why": "the frozen analyser's per-screen scores for the same sessions; the perception results are participant means of score_H (CC BY-NC 4.0)"
+  },
+  {
+   "path": "data/perception/participants.json",
+   "bytes": 2733,
+   "why": "listener group, row count and in_primary per participant code (CC BY-NC 4.0)"
+  },
+  {
+   "path": "media/e_vs_h.mp4",
+   "bytes": 130105,
+   "why": "silent demo clip, E beside H, cell rav08_ang; adapted from RAVDESS (Livingstone & Russo 2018), CC BY-NC-SA 4.0 -- see NOTICES.md"
+  },
+  {
+   "path": "media/e_vs_h.gif",
+   "bytes": 861440,
+   "why": "the same demo clip as a GIF for the README; same credit and licence"
+  },
+  {
+   "path": "media/brow_difference.gif",
+   "bytes": 1992268,
+   "why": "|H - E| over the same frames, normalised once across the clip; same credit and licence"
+  },
+  {
+   "path": "media/brow_difference_peak.png",
+   "bytes": 84565,
+   "why": "a single |H - E| frame from the same clip, at the peak; same credit and licence"
+  },
+  {
+   "path": "verify_freeze.py",
+   "bytes": 5841,
+   "why": "checks the frozen files by content against prereg/PLAN_FREEZE.sha256, and the release checksums when present"
+  },
+  {
+   "path": "code/perception/build_session.py",
+   "bytes": 111618,
+   "why": "FROZEN: builds each viewer's session from the stimulus manifest (hashed before the first participant)"
+  },
+  {
+   "path": "code/perception/build_lilt_icassp.py",
+   "bytes": 23333,
+   "why": "the helper module the frozen session builder imports"
+  },
+  {
+   "path": "code/perception/variants.py",
+   "bytes": 19796,
+   "why": "the training-free upper-face layer transforms applied to the model's raw rig output"
+  },
+  {
+   "path": "data/derived/served_stimuli_manifest.json",
+   "bytes": 239477,
+   "why": "FROZEN: which stimulus file was served on every screen of every rotation"
+  },
+  {
+   "path": "prereg/ANALYSIS_PLAN_EXP2.md",
+   "bytes": 23710,
+   "why": "FROZEN: the plan addendum for Experiment 2"
+  },
+  {
+   "path": "prereg/exp2_cell_rule.json",
+   "bytes": 6666,
+   "why": "FROZEN: the a-priori Experiment 2 cell rule"
+  },
+  {
+   "path": "prereg/p2_sensitivity_cells.json",
+   "bytes": 5462,
+   "why": "FROZEN: the pre-specified P2 sensitivity cells"
+  },
+  {
+   "path": ".gitattributes",
+   "bytes": 266,
+   "why": "stores and checks out every file byte for byte, so the hashes in SHA256SUMS and the pre-registration freeze survive a clone on any platform"
+  },
+  {
+   "path": ".gitignore",
+   "bytes": 26,
+   "why": "keeps the figure scripts' output folder out of the tree"
+  }
+ ],
+ "excluded": [
+  {
+   "what": "model output .npz rig arrays",
+   "why": "MetaHuman-layout animation curves; the licence adjudication rates distributing them 'unclear' while a code-only release is 'probably outside'"
+  },
+  {
+   "what": "corpus audio (IEMOCAP, ESD)",
+   "why": "licence-gated, redistribution prohibited"
+  },
+  {
+   "what": "corpus audio (RAVDESS, JVNV)",
+   "why": "CC BY-NC-SA 4.0 / CC BY-SA 4.0 permit redistribution with attribution and share-alike (RAVDESS non-commercial only); left to the source releases anyway, one rule for every stimulus"
+  },
+  {
+   "what": "manipulated ladder wavs",
+   "why": "derivatives of the above; the builder regenerates them"
+  },
+  {
+   "what": "rendered stimulus videos",
+   "why": "contain corpus audio AND a MetaHuman render; the silent, cropped demo clips in media/ are the only rendered frames shipped"
+  },
+  {
+   "what": "raw session records",
+   "why": "carry Prolific IDs, session IDs, timestamps and IP-derived codes; the de-identified responses are in data/perception/"
+  },
+  {
+   "what": "the model checkpoints",
+   "why": "third-party; each under its own licence"
+  },
+  {
+   "what": "the label-versus-voice and timing probe code and results",
+   "why": "a separate bench; only its model adapters are referenced by code/audit/run_ext.py"
+  }
+ ]
+}

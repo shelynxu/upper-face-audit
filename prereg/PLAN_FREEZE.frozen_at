@@ -1,0 +1,12 @@
+2026-09-14 21:34:52 +0900
+frozen_by: main session (main_5_freeze.sh)
+flags: hr_normal=OFF voice_check=ON singles=6 exp2_pair_ml=18
+manifest: 81 = single 6, pair 36, practice 2, pair_mute 6, pair_catch 1, pair_ml 18, voice_only 12 | built build_lilt_v6.py 2026-09-14 20:56
+analysis selftest: study_v6/final/finish/main_5_analysis_selftest.log (85/85 checks passed, analyse_lilt_v6.py md5 d0c5e5435903db3908f1e93614ac9a81)
+deployed webapp md5 (record, not a gate; expected 21f5da2d / 4432921c / b8fbe7e1 before any completion-code paste):
+  21f5da2d7ea34734cc2544a7b4f82899 */d/SPJ/webapp/server.py
+  7abc92a3c68b68fcb458537404db1ee0 */d/SPJ/webapp/static/app.js
+  37826cc1c45740e469e3ef21c310a028 */d/SPJ/webapp/config.json
+en 15 min (21:30 JST): app.js 7abc92a3 (lilt_en consent + instructions say about 15 minutes); plan note added; re-frozen; only test* sessions existed
+en consent wording (21:35 JST): 'no pause option ... may withdraw at any time' in en/ja/zh dur_en; app.js 7a9e9d0b; no plan change needed (plan does not quote this sentence)
+en consent trim (01:10 JST 15 Sep): app.js 19a4048352a119392422dee5bbbbc5a0 (EN TRIM v6, lilt_en only); dry self-test 89/89 after apply; logged in DEVIATIONS_V6.md

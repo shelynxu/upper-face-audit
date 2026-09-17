@@ -1,0 +1,85 @@
+panel,measure,source,voice,n_cells,estimate,ci_lo,ci_hi,description,file,key
+a,effort_ln_ratio,emoface,all,12,-0.0065316,-0.10444,0.11778,"brow ln ratio, effort step vs c100",data/derived/human_prediction_compare.csv,clean|brow_mean|effort
+a,null_floor,emoface,all,,0.023694,,,median |ln ratio| of the two nulls vs c100,data/derived/null_floor.csv,clean|brow_mean|floor_median_abs
+b,span_slope,emoface,all,12,-0.0082129,-0.10189,0.099051,brow ln-ratio slope per ln span factor,data/derived/dose_tables.csv,brow_mean|clean|span|m.amp|excl_fail False|all
+b,dyn_slope,emoface,all,12,-0.0003384,-0.060801,0.061224,brow ln-ratio slope per ln loudness factor,data/derived/dose_tables.csv,brow_mean|clean|dyn|m.amp|excl_fail False|all
+a,effort_ln_ratio,emotalk,all,12,0.10686,-0.09364,0.38179,"brow ln ratio, effort step vs c100",data/derived/human_prediction_compare.csv,clean|brow_mean|effort
+a,null_floor,emotalk,all,,0.043846,,,median |ln ratio| of the two nulls vs c100,data/derived/null_floor.csv,clean|brow_mean|floor_median_abs
+b,span_slope,emotalk,all,12,0.080499,-0.045136,0.23872,brow ln-ratio slope per ln span factor,data/derived/dose_tables.csv,brow_mean|clean|span|m.amp|excl_fail False|all
+b,dyn_slope,emotalk,all,12,-0.11307,-0.40715,0.16405,brow ln-ratio slope per ln loudness factor,data/derived/dose_tables.csv,brow_mean|clean|dyn|m.amp|excl_fail False|all
+a,effort_ln_ratio,emote,all,12,-0.014721,-0.10567,0.070071,"brow ln ratio, effort step vs c100",data/derived/human_prediction_compare.csv,clean|brow_mean|effort
+a,null_floor,emote,all,,0.015328,,,median |ln ratio| of the two nulls vs c100,data/derived/null_floor.csv,clean|brow_mean|floor_median_abs
+b,span_slope,emote,all,12,0.026525,-0.0076358,0.071898,brow ln-ratio slope per ln span factor,data/derived/dose_tables.csv,brow_mean|clean|span|m.amp|excl_fail False|all
+b,dyn_slope,emote,all,12,0.006973,-0.06439,0.076967,brow ln-ratio slope per ln loudness factor,data/derived/dose_tables.csv,brow_mean|clean|dyn|m.amp|excl_fail False|all
+a,effort_ln_ratio,medtalk,all,12,-0.072044,-0.13661,-0.010207,"brow ln ratio, effort step vs c100",data/derived/human_prediction_compare.csv,clean|brow_mean|effort
+a,null_floor,medtalk,all,,0.02271,,,median |ln ratio| of the two nulls vs c100,data/derived/null_floor.csv,clean|brow_mean|floor_median_abs
+b,span_slope,medtalk,all,12,-0.008423,-0.047365,0.033113,brow ln-ratio slope per ln span factor,data/derived/dose_tables.csv,brow_mean|clean|span|m.amp|excl_fail False|all
+b,dyn_slope,medtalk,all,12,0.0023566,-0.054229,0.052332,brow ln-ratio slope per ln loudness factor,data/derived/dose_tables.csv,brow_mean|clean|dyn|m.amp|excl_fail False|all
+a,effort_ln_ratio,f0_follower,all,12,0.42264,0.33814,0.51349,"brow ln ratio, effort step vs c100",data/derived/human_prediction_compare.csv,clean|brow_mean|effort
+a,null_floor,f0_follower,all,,0.050928,,,median |ln ratio| of the two nulls vs c100,data/derived/null_floor.csv,clean|brow_mean|floor_median_abs
+b,span_slope,f0_follower,all,12,0.47011,0.29253,0.64223,brow ln-ratio slope per ln span factor,data/derived/dose_tables.csv,brow_mean|clean|span|m.amp|excl_fail False|all
+b,dyn_slope,f0_follower,all,12,0.095783,-0.0091922,0.24123,brow ln-ratio slope per ln loudness factor,data/derived/dose_tables.csv,brow_mean|clean|dyn|m.amp|excl_fail False|all
+a,effort_ln_ratio,energy_follower,all,12,0.1379,0.10242,0.17486,"brow ln ratio, effort step vs c100",data/derived/human_prediction_compare.csv,clean|brow_mean|effort
+a,null_floor,energy_follower,all,,0.0034059,,,median |ln ratio| of the two nulls vs c100,data/derived/null_floor.csv,clean|brow_mean|floor_median_abs
+b,span_slope,energy_follower,all,12,0.0013659,-0.018144,0.023309,brow ln-ratio slope per ln span factor,data/derived/dose_tables.csv,brow_mean|clean|span|m.amp|excl_fail False|all
+b,dyn_slope,energy_follower,all,12,0.54185,0.35668,0.7188,brow ln-ratio slope per ln loudness factor,data/derived/dose_tables.csv,brow_mean|clean|dyn|m.amp|excl_fail False|all
+a,human_prediction,human,,,0.21715,0.089191,0.35893,what the same-actor human fit predicts for the effort step,data/derived/human_prediction_compare.csv,human_pred|human_ci_lo|human_ci_hi
+a,decision_band,human,,,0.21715,0.108575,0.4343,"the x[0.5, 2] band drawn around the prediction in panel (a)",data/derived/human_prediction_compare.csv,0.5 and 2 times human_pred
+a,human_observed,human,,,0.288258,0.203019,0.371016,"observed human brow ln ratio, RAVDESS strong vs normal takes (670 pairs, 24 actors)",code/human/g2_coefficients.json,"models > E7_common > W2_full > brow_mean > y_mean; interval from the same 4,000-draw bootstrap"
+a,effort_ln_ratio,emoface,zh,5,0.11833,,,"ESD 0002, Mandarin","code/audit/analyse2.py (ratio table, not shipped)",brow_mean|clean|effort|m.amp|lang:cn (descriptive)
+a,effort_ln_ratio,emoface,en,3,-0.10909,,,"RAVDESS 02, English","code/audit/analyse2.py (ratio table, not shipped)",brow_mean|clean|effort|m.amp|lang:en (descriptive)
+a,effort_ln_ratio,emoface,ja,4,-0.085691,,,"JVNV F2, Japanese","code/audit/analyse2.py (ratio table, not shipped)",brow_mean|clean|effort|m.amp|lang:jp (descriptive)
+b,span_slope,emoface,zh,5,-0.035435,,,"ESD 0002, Mandarin",data/derived/dose_tables.csv,brow_mean|clean|span|m.amp|excl_fail False|lang:cn (descriptive)
+b,span_slope,emoface,en,3,0.039446,,,"RAVDESS 02, English",data/derived/dose_tables.csv,brow_mean|clean|span|m.amp|excl_fail False|lang:en (descriptive)
+b,span_slope,emoface,ja,4,-0.018111,,,"JVNV F2, Japanese",data/derived/dose_tables.csv,brow_mean|clean|span|m.amp|excl_fail False|lang:jp (descriptive)
+b,dyn_slope,emoface,zh,5,-0.048082,,,"ESD 0002, Mandarin",data/derived/dose_tables.csv,brow_mean|clean|dyn|m.amp|excl_fail False|lang:cn (descriptive)
+b,dyn_slope,emoface,en,3,0.03512,,,"RAVDESS 02, English",data/derived/dose_tables.csv,brow_mean|clean|dyn|m.amp|excl_fail False|lang:en (descriptive)
+b,dyn_slope,emoface,ja,4,0.034089,,,"JVNV F2, Japanese",data/derived/dose_tables.csv,brow_mean|clean|dyn|m.amp|excl_fail False|lang:jp (descriptive)
+a,effort_ln_ratio,emotalk,zh,5,0.021791,,,"ESD 0002, Mandarin","code/audit/analyse2.py (ratio table, not shipped)",brow_mean|clean|effort|m.amp|lang:cn (descriptive)
+a,effort_ln_ratio,emotalk,en,3,0.35276,,,"RAVDESS 02, English","code/audit/analyse2.py (ratio table, not shipped)",brow_mean|clean|effort|m.amp|lang:en (descriptive)
+a,effort_ln_ratio,emotalk,ja,4,0.028769,,,"JVNV F2, Japanese","code/audit/analyse2.py (ratio table, not shipped)",brow_mean|clean|effort|m.amp|lang:jp (descriptive)
+b,span_slope,emotalk,zh,5,0.16405,,,"ESD 0002, Mandarin",data/derived/dose_tables.csv,brow_mean|clean|span|m.amp|excl_fail False|lang:cn (descriptive)
+b,span_slope,emotalk,en,3,0.010479,,,"RAVDESS 02, English",data/derived/dose_tables.csv,brow_mean|clean|span|m.amp|excl_fail False|lang:en (descriptive)
+b,span_slope,emotalk,ja,4,0.050667,,,"JVNV F2, Japanese",data/derived/dose_tables.csv,brow_mean|clean|span|m.amp|excl_fail False|lang:jp (descriptive)
+b,dyn_slope,emotalk,zh,5,-0.37346,,,"ESD 0002, Mandarin",data/derived/dose_tables.csv,brow_mean|clean|dyn|m.amp|excl_fail False|lang:cn (descriptive)
+b,dyn_slope,emotalk,en,3,0.035515,,,"RAVDESS 02, English",data/derived/dose_tables.csv,brow_mean|clean|dyn|m.amp|excl_fail False|lang:en (descriptive)
+b,dyn_slope,emotalk,ja,4,0.10884,,,"JVNV F2, Japanese",data/derived/dose_tables.csv,brow_mean|clean|dyn|m.amp|excl_fail False|lang:jp (descriptive)
+a,effort_ln_ratio,emote,zh,5,-0.022164,,,"ESD 0002, Mandarin","code/audit/analyse2.py (ratio table, not shipped)",brow_mean|clean|effort|m.amp|lang:cn (descriptive)
+a,effort_ln_ratio,emote,en,3,0.12592,,,"RAVDESS 02, English","code/audit/analyse2.py (ratio table, not shipped)",brow_mean|clean|effort|m.amp|lang:en (descriptive)
+a,effort_ln_ratio,emote,ja,4,-0.1109,,,"JVNV F2, Japanese","code/audit/analyse2.py (ratio table, not shipped)",brow_mean|clean|effort|m.amp|lang:jp (descriptive)
+b,span_slope,emote,zh,5,0.02825,,,"ESD 0002, Mandarin",data/derived/dose_tables.csv,brow_mean|clean|span|m.amp|excl_fail False|lang:cn (descriptive)
+b,span_slope,emote,en,3,0.043001,,,"RAVDESS 02, English",data/derived/dose_tables.csv,brow_mean|clean|span|m.amp|excl_fail False|lang:en (descriptive)
+b,span_slope,emote,ja,4,0.011758,,,"JVNV F2, Japanese",data/derived/dose_tables.csv,brow_mean|clean|span|m.amp|excl_fail False|lang:jp (descriptive)
+b,dyn_slope,emote,zh,5,-0.02667,,,"ESD 0002, Mandarin",data/derived/dose_tables.csv,brow_mean|clean|dyn|m.amp|excl_fail False|lang:cn (descriptive)
+b,dyn_slope,emote,en,3,0.070265,,,"RAVDESS 02, English",data/derived/dose_tables.csv,brow_mean|clean|dyn|m.amp|excl_fail False|lang:en (descriptive)
+b,dyn_slope,emote,ja,4,0.0020444,,,"JVNV F2, Japanese",data/derived/dose_tables.csv,brow_mean|clean|dyn|m.amp|excl_fail False|lang:jp (descriptive)
+a,effort_ln_ratio,medtalk,zh,5,-0.070726,,,"ESD 0002, Mandarin","code/audit/analyse2.py (ratio table, not shipped)",brow_mean|clean|effort|m.amp|lang:cn (descriptive)
+a,effort_ln_ratio,medtalk,en,3,-0.042569,,,"RAVDESS 02, English","code/audit/analyse2.py (ratio table, not shipped)",brow_mean|clean|effort|m.amp|lang:en (descriptive)
+a,effort_ln_ratio,medtalk,ja,4,-0.095798,,,"JVNV F2, Japanese","code/audit/analyse2.py (ratio table, not shipped)",brow_mean|clean|effort|m.amp|lang:jp (descriptive)
+b,span_slope,medtalk,zh,5,-0.052509,,,"ESD 0002, Mandarin",data/derived/dose_tables.csv,brow_mean|clean|span|m.amp|excl_fail False|lang:cn (descriptive)
+b,span_slope,medtalk,en,3,-0.013962,,,"RAVDESS 02, English",data/derived/dose_tables.csv,brow_mean|clean|span|m.amp|excl_fail False|lang:en (descriptive)
+b,span_slope,medtalk,ja,4,0.040864,,,"JVNV F2, Japanese",data/derived/dose_tables.csv,brow_mean|clean|span|m.amp|excl_fail False|lang:jp (descriptive)
+b,dyn_slope,medtalk,zh,5,0.047542,,,"ESD 0002, Mandarin",data/derived/dose_tables.csv,brow_mean|clean|dyn|m.amp|excl_fail False|lang:cn (descriptive)
+b,dyn_slope,medtalk,en,3,-0.025852,,,"RAVDESS 02, English",data/derived/dose_tables.csv,brow_mean|clean|dyn|m.amp|excl_fail False|lang:en (descriptive)
+b,dyn_slope,medtalk,ja,4,-0.034303,,,"JVNV F2, Japanese",data/derived/dose_tables.csv,brow_mean|clean|dyn|m.amp|excl_fail False|lang:jp (descriptive)
+a,effort_ln_ratio,f0_follower,zh,5,0.44416,,,"ESD 0002, Mandarin","code/audit/analyse2.py (ratio table, not shipped)",brow_mean|clean|effort|m.amp|lang:cn (descriptive)
+a,effort_ln_ratio,f0_follower,en,3,0.40529,,,"RAVDESS 02, English","code/audit/analyse2.py (ratio table, not shipped)",brow_mean|clean|effort|m.amp|lang:en (descriptive)
+a,effort_ln_ratio,f0_follower,ja,4,0.40877,,,"JVNV F2, Japanese","code/audit/analyse2.py (ratio table, not shipped)",brow_mean|clean|effort|m.amp|lang:jp (descriptive)
+b,span_slope,f0_follower,zh,5,0.47603,,,"ESD 0002, Mandarin",data/derived/dose_tables.csv,brow_mean|clean|span|m.amp|excl_fail False|lang:cn (descriptive)
+b,span_slope,f0_follower,en,3,0.63947,,,"RAVDESS 02, English",data/derived/dose_tables.csv,brow_mean|clean|span|m.amp|excl_fail False|lang:en (descriptive)
+b,span_slope,f0_follower,ja,4,0.33035,,,"JVNV F2, Japanese",data/derived/dose_tables.csv,brow_mean|clean|span|m.amp|excl_fail False|lang:jp (descriptive)
+b,dyn_slope,f0_follower,zh,5,0.09625,,,"ESD 0002, Mandarin",data/derived/dose_tables.csv,brow_mean|clean|dyn|m.amp|excl_fail False|lang:cn (descriptive)
+b,dyn_slope,f0_follower,en,3,0.18718,,,"RAVDESS 02, English",data/derived/dose_tables.csv,brow_mean|clean|dyn|m.amp|excl_fail False|lang:en (descriptive)
+b,dyn_slope,f0_follower,ja,4,0.025545,,,"JVNV F2, Japanese",data/derived/dose_tables.csv,brow_mean|clean|dyn|m.amp|excl_fail False|lang:jp (descriptive)
+a,effort_ln_ratio,energy_follower,zh,5,0.1202,,,"ESD 0002, Mandarin","code/audit/analyse2.py (ratio table, not shipped)",brow_mean|clean|effort|m.amp|lang:cn (descriptive)
+a,effort_ln_ratio,energy_follower,en,3,0.075193,,,"RAVDESS 02, English","code/audit/analyse2.py (ratio table, not shipped)",brow_mean|clean|effort|m.amp|lang:en (descriptive)
+a,effort_ln_ratio,energy_follower,ja,4,0.20706,,,"JVNV F2, Japanese","code/audit/analyse2.py (ratio table, not shipped)",brow_mean|clean|effort|m.amp|lang:jp (descriptive)
+b,span_slope,energy_follower,zh,5,-0.0028193,,,"ESD 0002, Mandarin",data/derived/dose_tables.csv,brow_mean|clean|span|m.amp|excl_fail False|lang:cn (descriptive)
+b,span_slope,energy_follower,en,3,0.0071754,,,"RAVDESS 02, English",data/derived/dose_tables.csv,brow_mean|clean|span|m.amp|excl_fail False|lang:en (descriptive)
+b,span_slope,energy_follower,ja,4,0.0010426,,,"JVNV F2, Japanese",data/derived/dose_tables.csv,brow_mean|clean|span|m.amp|excl_fail False|lang:jp (descriptive)
+b,dyn_slope,energy_follower,zh,5,0.7355,,,"ESD 0002, Mandarin",data/derived/dose_tables.csv,brow_mean|clean|dyn|m.amp|excl_fail False|lang:cn (descriptive)
+b,dyn_slope,energy_follower,en,3,0.78641,,,"RAVDESS 02, English",data/derived/dose_tables.csv,brow_mean|clean|dyn|m.amp|excl_fail False|lang:en (descriptive)
+b,dyn_slope,energy_follower,ja,4,0.10629,,,"JVNV F2, Japanese",data/derived/dose_tables.csv,brow_mean|clean|dyn|m.amp|excl_fail False|lang:jp (descriptive)
+a,x_limits,figure,,,,-0.2,0.62,x-axis limits of panel (a),code/figures/make_figures.py,XLIM_A
+b,x_limits,figure,,,,-0.16,0.7,x-axis limits of the span panel,code/figures/make_figures.py,XLIM_SPAN
+b,x_limits,figure,,,,-0.46,0.84,x-axis limits of the dynamics panel,code/figures/make_figures.py,XLIM_DYN
