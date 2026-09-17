@@ -101,6 +101,11 @@
    "why": "the perception figure; redraws it from the released values and can recheck them against the per-screen scores"
   },
   {
+   "path": "code/figures/make_medtalk_figure.py",
+   "bytes": 31942,
+   "why": "post hoc, not pre-registered: MEDTalk's intensity signal beside its brows; recomputes the values from data/derived/audit_results.csv and draws the figure into figures_out/, and --check compares the values with the released CSV"
+  },
+  {
    "path": "prereg/ANALYSIS_PLAN.md",
    "bytes": 47560,
    "why": "the frozen plan: hypotheses, exclusions, stopping rule, sample size"
@@ -156,6 +161,11 @@
    "why": "every value plotted in the perception figure"
   },
   {
+   "path": "data/derived/figure_medtalk_values.csv",
+   "bytes": 14294,
+   "why": "every value plotted in the post hoc MEDTalk figure; recomputable from data/derived/audit_results.csv (CC BY-NC 4.0)"
+  },
+  {
    "path": "data/perception/perception_responses.csv",
    "bytes": 447967,
    "why": "every recorded screen of the 42 analysed sessions, de-identified (CC BY-NC 4.0)"
@@ -189,6 +199,11 @@
    "path": "media/brow_difference_peak.png",
    "bytes": 84565,
    "why": "a single |H - E| frame from the same clip, at the peak; same credit and licence"
+  },
+  {
+   "path": "media/medtalk_intensity_vs_brow.png",
+   "bytes": 212716,
+   "why": "the post hoc MEDTalk figure shown in the README: a chart of data/derived/figure_medtalk_values.csv, not a rendered frame (CC BY-NC 4.0)"
   },
   {
    "path": "verify_freeze.py",

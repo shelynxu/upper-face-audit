@@ -69,6 +69,15 @@ listener group.
 **Licence:** CC BY-NC 4.0 (https://creativecommons.org/licenses/by-nc/4.0/), for non-commercial
 research. Do not attempt to identify any participant. Not covered by the MIT licence in `LICENSE`.
 
+## The post hoc MEDTalk figure
+
+`media/medtalk_intensity_vs_brow.png` and the values it plots,
+`data/derived/figure_medtalk_values.csv`, are a chart and a table of this study's own audit
+measurements of MEDTalk's output. They contain no audio and no rendered frame.
+
+**Licence:** CC BY-NC 4.0 (https://creativecommons.org/licenses/by-nc/4.0/). Not covered by the MIT
+licence in `LICENSE`.
+
 ## Demo clips in `media/` — credit and licence
 
 `media/e_vs_h.mp4`, `media/e_vs_h.gif`, `media/brow_difference.gif` and

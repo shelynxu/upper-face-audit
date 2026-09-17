@@ -49,17 +49,22 @@ python code/perception/mixed_model_family.py
 # redraw the figures from the released values, into figures_out/
 python code/figures/make_figures.py figures_out/                # protocol diagram, dose response
 python code/figures/make_perception_figure.py --check-scored    # the perception figure
+python code/figures/make_medtalk_figure.py                      # the post hoc MEDTalk figure
+
+# recheck the post hoc MEDTalk figure's released values against audit_results.csv; writes nothing
+python code/figures/make_medtalk_figure.py --check
 
 # confirm the pre-registration is untouched
 python verify_freeze.py
 ```
 
-`data/derived/figure_dose_values.csv` and `data/derived/figure_perception_values.csv` carry every
-value plotted in the figures, each with the key it came from, so a figure can be checked without
-rerunning anything. `--check-scored` goes one step further and recomputes the perception figure's
-values from `data/perception/perception_scored.csv` before drawing, stopping if any of them
-disagrees. That figure's panel (a) is three crops of a rendered frame; the renders are not part of
-this release, so the panel is drawn empty at its published size unless `--frames` points at them.
+`data/derived/figure_dose_values.csv`, `data/derived/figure_perception_values.csv` and
+`data/derived/figure_medtalk_values.csv` carry every value plotted in the figures, each with the key
+it came from, so a figure can be checked without rerunning anything. `--check-scored` goes one step
+further and recomputes the perception figure's values from `data/perception/perception_scored.csv`
+before drawing, stopping if any of them disagrees. That figure's panel (a) is three crops of a
+rendered frame; the renders are not part of this release, so the panel is drawn empty at its
+published size unless `--frames` points at them.
 
 ## Level 2 — rebuild the stimuli from the corpora
 

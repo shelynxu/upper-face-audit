@@ -68,11 +68,13 @@ code/
   audit/        model inference wrappers, the brow readout, the dose analysis
   human/        the same-actor human prediction
   perception/   the frozen analyser, the session builder, robustness and mixed-model checks
-  figures/      the figure scripts: protocol diagram, dose response, perception figure
+  figures/      the figure scripts: protocol diagram, dose response, perception figure,
+                and the post hoc MEDTalk figure
 data/
   derived/      every measurement the analysis produced
   perception/   the de-identified perception responses and their per-screen scores (see below)
-media/          the two silent demo clips and the difference frames shown above
+media/          the two silent demo clips and the difference frames shown above, and the
+                post hoc MEDTalk figure shown below
 MANIFEST.json   what each shipped file is for, and what was deliberately left out
 ```
 
@@ -101,7 +103,8 @@ The figures redraw from those tables and nothing else: `code/figures/make_figure
 the protocol diagram and the dose response, the latter from `data/derived/figure_dose_values.csv`,
 and `code/figures/make_perception_figure.py --check-scored` draws the perception figure from
 `data/derived/figure_perception_values.csv`, recomputing those values from the per-screen scores
-first and stopping if they disagree.
+first and stopping if they disagree. The post hoc MEDTalk figure below is checked the same way, its
+values recomputed from `data/derived/audit_results.csv`.
 
 ## What is deliberately not here
 
@@ -144,8 +147,34 @@ The frozen analyser in `code/perception/` reads the original per-session records
 distributed because they carry the identifiers listed above. `perception_scored.csv` is its
 per-screen output for exactly these sessions, so its results can be checked without them.
 
+## MEDTalk's intensity signal and its brows (post hoc)
+
+This side analysis of MEDTalk, one of the four audited talking heads, is post hoc, not
+pre-registered, and conditional on these three voices.
+
+MEDTalk computes a scalar intensity signal, *s*<sub>t</sub>, per frame: emotion2vec features of the
+audio attend to its Whisper transcript, which reaches the animation decoder only through
+*s*<sub>t</sub>. Brow amplitude is the geometric mean of inner and outer brow-raise amplitude (95th
+minus 5th percentile within the speech span). **(a)** On the register and effort steps
+*s*<sub>t</sub> rises slightly (+0.005 to +0.016) while brow amplitude falls (about -0.07); on the
+null steps both stay near zero. **(b)** Across steps within a cell, *s*<sub>t</sub> and brow
+amplitude tend to move in opposite directions (slope -1.52, 95 % CI [-3.10, -0.55]). This is
+descriptive: both respond to register, so the slope should not be read as the gain of a path from
+*s*<sub>t</sub> to the brows; which internal path carries the brow fall was not tested.
+
+![MEDTalk's intensity signal beside its brow amplitude](media/medtalk_intensity_vs_brow.png)
+
+*MEDTalk only; values are ln ratios against each cell's `c100`. (a) Mean of 12 cells (three
+voices), 95 % bootstrap CI over cells. (b) One symbol per item, 16 steps x 12 cells; dashed: the
+within-cell slope, fitted on cell-centred values over all 17 steps (`c100` included), with a
+cluster-bootstrap CI over cells.*
+
+`python code/figures/make_medtalk_figure.py` redraws the figure into `figures_out/` from
+`data/derived/audit_results.csv`; `--check` only rechecks `data/derived/figure_medtalk_values.csv`.
+
 ## Licence
 
-The code in `code/` is MIT (see `LICENSE`). The files in `data/perception/` are CC BY-NC 4.0, and
-the demo clips in `media/` are CC BY-NC-SA 4.0. Third-party components, corpora and models keep
-their own licences — see `NOTICES.md`.
+The code in `code/` is MIT (see `LICENSE`). The files in `data/perception/` are CC BY-NC 4.0, as are
+the post hoc MEDTalk figure `media/medtalk_intensity_vs_brow.png` and its values
+`data/derived/figure_medtalk_values.csv`; the demo clips in `media/` are CC BY-NC-SA 4.0.
+Third-party components, corpora and models keep their own licences — see `NOTICES.md`.
